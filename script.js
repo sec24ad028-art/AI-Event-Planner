@@ -1,13 +1,3 @@
-function login() {
-
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-
-    if(email !== "" && password !== ""){
-        window.location.href = "dashboard.html";
-    }
-    else{
-        alert("Please enter Email and Password");
-    }
-
+function login(){
+    window.location.href="dashboard.html";
 }
