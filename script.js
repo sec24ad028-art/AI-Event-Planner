@@ -1,13 +1,13 @@
-function login(){
+function login() {
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-    if(username==="admin" && password==="1234"){
-        alert("Login Successful!");
-        window.location.href="dashboard.html";
-    }else{
-        document.getElementById("message").innerHTML="Invalid Username or Password";
+    if(email !== "" && password !== ""){
+        window.location.href = "dashboard.html";
+    }
+    else{
+        alert("Please enter Email and Password");
     }
 
 }
